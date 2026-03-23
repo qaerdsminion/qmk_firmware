@@ -1,5 +1,37 @@
-# Quantum Mechanical Keyboard Firmware
+# Quantum Mechanical Keyboard Firmware (Axel Edition)
+Removed every keyboard except the ergodox and zsa.  
+To make the keymap for the ergodox, run:  
+```
+qmk compile -kb ergodox_ez -km axel
+```
+Then flash it using wally.   
 
+Have to figure out the MCU type to flash using qmk flash -b <compiled hex> -m <MCU name>.  
+List:  
+Supported MCUs are:
+ - at90usb162
+ - atmega32u4
+ - at90usb646
+ - at90usb1286
+ - mkl26z64
+ - mk20dx128
+ - mk20dx256
+ - mk66fx1m0
+ - mk64fx512
+ - imxrt1062
+ - TEENSY2
+ - TEENSY2PP
+ - TEENSYLC
+ - TEENSY30
+ - TEENSY31
+ - TEENSY32
+ - TEENSY35
+ - TEENSY36
+ - TEENSY40
+ - TEENSY41
+ - TEENSY_MICROMOD
+
+---
 [![Current Version](https://img.shields.io/github/tag/qmk/qmk_firmware.svg)](https://github.com/qmk/qmk_firmware/tags)
 [![Discord](https://img.shields.io/discord/440868230475677696.svg)](https://discord.gg/qmk)
 [![Docs Status](https://img.shields.io/badge/docs-ready-orange.svg)](https://docs.qmk.fm)
